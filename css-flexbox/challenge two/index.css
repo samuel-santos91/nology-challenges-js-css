@@ -1,0 +1,32 @@
+section {
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 600px;
+  }
+  
+  section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.3%;
+  }
+  
+  #cardFour {
+    background-color: aqua;
+  }
+  
+  #cardFive {
+    background-color: orange;
+  }
+  
+  #cardSix {
+    background-color: pink;
+  }
+
+  #cardSeven {
+    background-color: red;
+  }
+  
