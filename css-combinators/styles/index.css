@@ -1,0 +1,15 @@
+section h1 + p {
+  font-style: italic;
+}
+
+section h1 + p ~ p {
+  color: grey;
+}
+
+section h2 ~ p {
+  text-decoration: underline;
+}
+
+section h3 + p ~ p {
+    color: blue;
+}
