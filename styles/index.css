@@ -1,0 +1,29 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 162, 23);
+}
+
+header p {
+  text-align: right;
+}
+
+h3 {
+  color: green;
+}
+
+div {
+  border: 3px solid black;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.band-one {
+  text-decoration: underline;
+}
