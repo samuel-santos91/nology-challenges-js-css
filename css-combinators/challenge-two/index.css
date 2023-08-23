@@ -1,0 +1,26 @@
+section {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section h1 {
+  color: blue;
+}
+
+section ul {
+  list-style-type: none;
+}
+
+section p {
+  color: red;
+  text-decoration: underline;
+}
+
+section ~ p {
+  color: brown;
+}
+
+section + p {
+  color: coral;
+  font-weight: bold;
+}
