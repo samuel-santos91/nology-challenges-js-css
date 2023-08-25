@@ -1,0 +1,49 @@
+@use "./breakpoints.scss";
+
+// Media queries
+
+@mixin small {
+  @media screen and (max-width: breakpoints.$md) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: (breakpoints.$md + 1px)) and (max-width: breakpoints.$lg) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: (breakpoints.$lg + 1px)) {
+    @content;
+  }
+}
+
+@mixin vertical-stripe {
+  @media screen and (min-width: (breakpoints.$md + 1px)) {
+    @content;
+  }
+}
+
+//Stripe colours
+
+@mixin colours ($first, $second, $third) {
+  @include small {
+    background-color: $first;
+  }
+  @include medium {
+    background-color: $second;
+  }
+  @include large {
+    background-color: $third;
+  }
+}
+
+//Stripe dimensions
+
+@mixin dimensions ($width, $height) {
+  width: $width;
+  height: $height;
+}
+

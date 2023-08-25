@@ -1,0 +1,33 @@
+@use "./partials/mixins.scss";
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.flag {
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  
+  @include mixins.vertical-stripe {
+    display: flex;
+  }
+}
+
+.stripe {
+  @include mixins.dimensions(300px, 60px);
+  @include mixins.vertical-stripe {
+    @include mixins.dimensions(100px, 180px);
+  }
+
+  &--one {
+    @include colours(black, black, green);
+  }
+  &--two {
+    @include colours(red, yellow, white);
+  }
+  &--three {
+    @include colours(yellow, red, orange);
+  }
+}
