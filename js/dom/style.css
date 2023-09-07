@@ -1,0 +1,15 @@
+img {
+  width: 10rem;
+  fill: green;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input, form select {
+  width: 15rem;
+}
+form .button {
+  margin-top: 1rem;
+}

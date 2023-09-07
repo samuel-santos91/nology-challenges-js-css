@@ -1,0 +1,16 @@
+ img {
+    width: 10rem;
+    fill: green;
+ }
+
+ form {
+    display: flex;
+    flex-direction: column;
+
+    input, select {
+        width: 15rem;
+    }
+    .button {
+        margin-top: 1rem;
+    }
+ }
