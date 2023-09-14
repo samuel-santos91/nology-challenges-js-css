@@ -32,10 +32,10 @@ delayedIncDec(5, "dec", 5000)
 
 const delayFilter = (array, callback, timeout = 2500) => {
   return new Promise((resolve, reject) => {
-    if (!Array(array)) {
+    if (!Array.isArray(array)) {
       reject(new Error("Array not valid"));
     }
-    if (!Function(callback)) {
+    if (typeof callback !== "function") {
       reject(new Error("Function not valid"));
     }
     setTimeout(() => {
